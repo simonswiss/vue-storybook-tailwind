@@ -36,7 +36,7 @@ storiesOf("Design Tokens", module)
     <div class="m-8">
       <div v-for="(value, key) in fontSizes" class="mb-4">
         <p class="text-xs text-grey uppercase tracking-wide inline-block">{{ key }}</p>
-        <p :class="'text-' + key">The quick brown fox jumps over the lazy dog</p>
+        <p :class="'text-grey-darkest text-' + key">The quick brown fox jumps over the lazy dog</p>
       </div>
     </div>
   `
@@ -51,7 +51,7 @@ storiesOf("Design Tokens", module)
     <div class="m-8">
       <div v-for="(value, key) in fontWeights" class="mb-4">
         <p class="text-xs text-grey uppercase tracking-wide inline-block">{{ key }}</p>
-        <p :class="'text-lg font-' + key">The quick brown fox jumps over the lazy dog</p>
+        <p :class="'text-grey-darkest text-lg font-' + key">The quick brown fox jumps over the lazy dog</p>
       </div>
     </div>
     `
