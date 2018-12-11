@@ -2,7 +2,6 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const path = require('path')
 module.exports = (storybookBaseConfig, configType) => {
 
-  storybookBaseConfig.plugins.push(new VueLoaderPlugin())
   storybookBaseConfig.module.rules.push({
     test: /\.s?css$/,
     loaders: ["style-loader", "css-loader", "postcss-loader", "sass-loader"],
